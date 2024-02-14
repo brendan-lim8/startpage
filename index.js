@@ -14,7 +14,7 @@ function showTime() {
 
 	document.getElementById(
 		"date"
-	).innerHTML = `${today}, ${hour}:${minute}:${second} | ${day}/${month}/${year}`;
+	).innerHTML = `${today}, ${hour}:${minute}: | ${day}/${month}/${year}`;
 	setTimeout(showTime, 0);
 }
 
