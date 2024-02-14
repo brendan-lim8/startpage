@@ -5,9 +5,51 @@
   <title>~/startpage 🏠</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <style>
+    body {
+      display: flex;
+      justify-content: space-between;
+    }
+
     .image img {
       max-width: 100%;
       height: auto;
+    }
+
+    nav {
+      width: 50%; /* Adjust the width based on your preference */
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      list-style-type: none;
+    }
+
+    li {
+      line-height: 1.4em;
+      margin-left: 4.8em;
+    }
+
+    li:first-child {
+      display: inline-block;
+      color: #cca86b;
+      font-size: 1.5em;
+      font-weight: 600;
+      text-align: center;
+      line-height: 2em;
+      margin-left: 2.5em;
+    }
+
+    a {
+      color: #b66d61;
+      font-size: 1.1em;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff864e;
+      font-style: italic;
     }
   </style>
 </head>
@@ -36,10 +78,12 @@
       <li><a href="https://achieve.macmillanlearning.com/courses/kwzx2y/mycourse">Textbook</a></li>
       <li><a href="https://account.cengage.com/login?SAMLRequest=fZLLTsMwEEV%2FJfI%2BL%2FeRxGpSVVRIlaBCUBBiZznT1CIZB4%2FT0r8npLSiC9haM%2BdenfFs%2FtnU3h4saYM5i4OIeYDKlBqrnD1vbv2UzYsZyabmrVh0boeP8NEBOW9BBNb1azcGqWvAPoHdawXPj3c52znXkghD2W8ECrCSFQTKNCGRCQdaGBnJp5M03iKtXyfrajGaJMxb9miN0g11LhSlTIfuClSbSiPzbo1VMPTK2VbWBMxbLXOmy3iaZXHGk2kySXg2TbLROE3SLMr6AaIOVkhOossZj%2FjYj2KfJxseCZ4KPg7GUfTGvJezFv6tpReFJE4mctZZFEaSJoGyARJOiafF%2FZ3oR0VrjTPK1OxHnBgC7W%2FC%2FwB5VsuKs4LD4RCYdydPEgeBdPLt93F7XYINqd1j2QDKo2lt9SHLY%2Blm4e8Kl0uu%2B8zV8sHUWh2%2FHTbS%2FV0pDuLhRZf%2BdhgVHVILSm81lCwsfjKu%2F0fxBQ%3D%3D&RelayState=%252Foauth2%252Fv1%252Fauthorize%252Fredirect%253Fokta_key%253DctohDYFW-kt-ly8O7R3njpTRLvDGF3NJDw_LCY7qe70&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=VpafaMaW7RrjzEVRf%2FR%2Bil7%2F0zipnLFKsTusX8ip3s0p7takfx5hZC53w5xLxNp67mHoRF6AQ8TJs7%2F%2B1wNAGmz89S2pqmVXoLaTu5PsWbZKKAQwTx%2F%2BCFGJM2WvMu3AOwfaNCRqzHIIQbxIv%2F%2B9750KPEbXe26qr4%2FaJKPnSvGVfUXXAd4KvTMexs%2F6jwTTNVckeozWXbGXJo5owfK%2FUYOEUgNk5id0FlIfCxAa8t%2BFaHFuSxXZhHVPMtiEfGD3zRJkhZmXVpEAISdlQSe0p83qTinuU%2FJOe%2BQlyUT9yFGEv9A%2Fp78WTB8G1a6aNsLATVeJmCRyWgiscMponzS9sQ%3D%3D">WebAssign</a></li>
     </ul>
+  </nav>
+  <nav>
     <ul>
-      <li>~/utility 🛠️</li>
-      <li><a href="https://www.desmos.com/scientific">Desmos Scientific Calculator</a></li>
-      <li><a href="https://www.desmos.com/calculator">Desmos Graphing Calculator</a></li>
+      <li>~/utility </li>
+      <li><a href="https://www.desmos.com/scientific">Calculator</a></li>
+      <li><a href="https://www.desmos.com/calculator">Graph</a></li>
     </ul>
   </nav>
   <script type="text/javascript" src="index.js"></script>
