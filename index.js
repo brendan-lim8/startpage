@@ -2,7 +2,7 @@ function showTime() {
 	const date = new Date();
 
 	let today = date.toLocaleString("en", { weekday: "long" });
-	let hour = date.toLocaleString("pl", { hour: "2-digit" }); // use 24h time format
+	let hour = date.toLocaleString("pl", { hour: "2-digit", hour12: true });
 	let minute = date.toLocaleString("en", { minute: "2-digit" });
 	let second = date.toLocaleString("en", { second: "2-digit" });
 	let day = date.toLocaleString("en", { day: "2-digit" });
@@ -14,7 +14,7 @@ function showTime() {
 
 	document.getElementById(
 		"date"
-	).innerHTML = `${today}, ${hour}:${minute}: | ${day}/${month}/${year}`;
+	).innerHTML = `${today}, ${hour}:${minute} | ${day}/${month}/${year}`;
 	setTimeout(showTime, 0);
 }
 
