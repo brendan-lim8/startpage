@@ -92,6 +92,17 @@
     </nav>
   </div>
   <script type="text/javascript" src="index.js"></script>
+  <script>
+    // Your existing script here
+    
+    // Add this script to set focus on the Google search input
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.querySelector('[name="q"]');
+      if (searchInput) {
+        searchInput.focus();
+      }
+    });
+  </script>
 </body>
 
 </html>
