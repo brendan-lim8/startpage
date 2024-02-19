@@ -95,14 +95,12 @@
   <script>
     // Your existing script here
     
-    // Add this script to set focus on the Google search input
-    document.addEventListener("DOMContentLoaded", function () {
-  const searchInput = document.querySelector('[name="q"]');
-  if (searchInput) {
-    searchInput.focus();
-    setTimeout(() => searchInput.select(), 1000); // Adjust the delay if needed
-  }
-});
+    // Set focus on the Google search input when the page loads
+    const searchInput = document.querySelector('[name="q"]');
+    if (searchInput) {
+      searchInput.focus();
+      setTimeout(() => searchInput.select(), 1000); // Adjust the delay if needed
+    }
   </script>
 </body>
 
