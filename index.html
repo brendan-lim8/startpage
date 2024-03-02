@@ -55,16 +55,15 @@
       font-style: italic;
     }
 
-    /* Updated styles for the utility and other sections */
-    nav ul:nth-child(3),
-    nav ul:nth-child(4) {
-      margin-top: 0; /* Remove top margin for the Other section */
-      width: 100%; /* Make both Utility and Other sections the same width */
+    /* New CSS for equalizing size and alignment */
+    nav ul {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%; /* Equal width for both utility and other */
     }
 
-    nav ul:nth-child(3) li,
-    nav ul:nth-child(4) li {
-      margin-left: 2em; /* Adjust margin between links in Utility and Other sections */
+    nav ul:first-child {
+      margin-right: 2em; /* Adjust the margin between sections */
     }
   </style>
 </head>
@@ -91,10 +90,6 @@
         <li><a href="https://www2.cs.sfu.ca/CourseCentral/120/alavergn/index.html">CMPT</a></li>
         <li><a href="https://achieve.macmillanlearning.com/courses/kwzx2y/mycourse">Textbook</a></li>
         <li><a href="https://account.cengage.com/login">WebAssign</a></li>
-        <!-- Add the Other section here -->
-        <li>~/other </li>
-        <li><a href="https://example.com">Example Link</a></li>
-        <!-- Add more links as needed -->
       </ul>
       <ul>
         <li>~/utility </li>
@@ -102,6 +97,12 @@
         <li><a href="https://www.desmos.com/calculator">Graph</a></li>
         <li><a href="https://homeworkify.st/mirror-1/">Homeworkify</a></li>
         <li><a href="https://github.com/Brendeen8/startpage">Edit Startpage</a></li>
+      </ul>
+      <!-- New "Other" section with equal width -->
+      <ul>
+        <li>~/other </li>
+        <li><a href="https://example.com">Example Link</a></li>
+        <!-- Add more links as needed -->
       </ul>
     </nav>
   </div>
